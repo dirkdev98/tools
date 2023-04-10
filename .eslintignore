@@ -4,3 +4,4 @@ node_modules
 generated
 .nyc_output
 .clinic
+src/generated/application

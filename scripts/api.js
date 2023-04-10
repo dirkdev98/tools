@@ -1,6 +1,7 @@
 import { environment, isProduction, isStaging, mainFn } from "@compas/stdlib";
 import { initializeServices } from "../src/service.js";
-import { app, serviceLogger } from "../src/services/core.js";
+import { app } from "../src/services/app.js";
+import { serviceLogger } from "../src/services/logger.js";
 
 mainFn(import.meta, main);
 

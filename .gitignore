@@ -26,6 +26,7 @@ dist
 out
 
 # Generator output
+src/generated/application
 structure.sql
 
 # Local environment

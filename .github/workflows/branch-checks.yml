@@ -1,0 +1,49 @@
+name: Branch checks
+on:
+  push:
+    branches:
+      - main
+
+env:
+  CI: true
+
+jobs:
+  lint:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Run lint
+        run: |
+          npm ci
+          npx compas run generate
+          npx compas lint
+
+  test:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+
+      - name: Run tests
+        run: |
+          npm ci
+          npx compas run generate
+          npx compas test
