@@ -14,3 +14,8 @@ template via [create-compas](https://www.npmjs.com/package/create-compas).
   - `compas lint`
 - Run the API
   - `compas run api`
+
+## Endpoints
+
+- https://ddv.tools/date/:string
+- https://ddv.tools/date/n/:number
