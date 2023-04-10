@@ -17,7 +17,7 @@ export function extendWithDate(generator) {
       timeOnly: T.date().timeOnly(),
     }),
 
-    R.get("/convert/n/:value", "convertNumber")
+    R.get("/n/:value", "convertNumber")
       .params({
         value: T.number().max(Number.MAX_SAFE_INTEGER),
       })
@@ -26,7 +26,7 @@ export function extendWithDate(generator) {
         "Convert the inputted milliseconds since epoch to various date formats.",
       ),
 
-    R.get("/convert/:value", "convertDate")
+    R.get("/:value", "convertDate")
       .params({
         value: T.date(),
       })
