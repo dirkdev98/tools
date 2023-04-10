@@ -1,4 +1,3 @@
-import { App } from "@compas/code-gen";
 import { AppError } from "@compas/stdlib";
 
 /**
