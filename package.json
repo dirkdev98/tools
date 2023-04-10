@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@compas/cli": "0.0.241",
+    "@compas/server": "0.0.241",
+    "@compas/stdlib": "0.0.241",
+    "@compas/store": "0.0.241"
+  },
+  "devDependencies": {
+    "@compas/code-gen": "0.0.241",
+    "@compas/eslint-plugin": "0.0.241",
+    "axios": "1.3.5"
+  },
+  "prettier": "@compas/eslint-plugin/prettierrc"
+}
