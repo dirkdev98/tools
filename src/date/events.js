@@ -15,11 +15,11 @@ export function dateConvert(date) {
     epochInSeconds: Math.floor(date.getTime() / 1000),
     epochInMs: date.getTime(),
     isoString: date.toISOString(),
-    dateOnly: `${String(date.getFullYear()).padStart(4, "0")}-${String(
-      date.getMonth() + 1,
-    ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`,
-    timeOnly: `${String(date.getHours()).padStart(2, "0")}:${String(
-      date.getMinutes(),
+    dateOnly: `${String(date.getUTCFullYear()).padStart(4, "0")}-${String(
+      date.getUTCMonth() + 1,
+    ).padStart(2, "0")}-${String(date.getUTCDate()).padStart(2, "0")}`,
+    timeOnly: `${String(date.getUTCHours()).padStart(2, "0")}:${String(
+      date.getUTCMinutes(),
     ).padStart(2, "0")}:${String(date.getSeconds()).padStart(2, "0")}.${String(
       date.getMilliseconds(),
     ).padStart(3, "0")}`,

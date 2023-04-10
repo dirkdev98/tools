@@ -27,7 +27,7 @@ test("date/controller", (t) => {
       t.equal(response.epochInSeconds, 1681120967);
       t.equal(response.epochInMs, 1681120967831);
       t.equal(response.dateOnly, "2023-04-10");
-      t.equal(response.timeOnly, "12:02:47.831");
+      t.equal(response.timeOnly, "10:02:47.831");
       t.equal(response.isoString, "2023-04-10T10:02:47.831Z");
     });
   });
@@ -51,7 +51,7 @@ test("date/controller", (t) => {
       t.equal(response.epochInSeconds, 1681120967);
       t.equal(response.epochInMs, 1681120967831);
       t.equal(response.dateOnly, "2023-04-10");
-      t.equal(response.timeOnly, "12:02:47.831");
+      t.equal(response.timeOnly, "10:02:47.831");
       t.equal(response.isoString, "2023-04-10T10:02:47.831Z");
     });
   });
