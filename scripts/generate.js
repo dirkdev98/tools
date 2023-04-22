@@ -1,6 +1,7 @@
 import { Generator } from "@compas/code-gen/experimental";
 import { mainFn } from "@compas/stdlib";
 import { extendWithDate } from "../gen/date.js";
+import { extendWithSpec } from "../gen/spec.js";
 
 mainFn(import.meta, main);
 
@@ -8,6 +9,7 @@ function main() {
   const generator = new Generator();
 
   extendWithDate(generator);
+  extendWithSpec(generator);
 
   generator.generate({
     targetLanguage: "js",

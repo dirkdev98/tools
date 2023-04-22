@@ -49,7 +49,10 @@ export function serviceAppInit() {
 export async function serviceAppLoadAndInjectRoutes() {
   serviceLogger.info("loading app");
 
-  await Promise.all([import("../date/controller.js")]);
+  await Promise.all([
+    import("../date/controller.js"),
+    import("../spec/controller.js"),
+  ]);
 
   app.use(
     router(
