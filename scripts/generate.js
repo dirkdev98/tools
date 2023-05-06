@@ -1,4 +1,4 @@
-import { Generator } from "@compas/code-gen/experimental";
+import { Generator } from "@compas/code-gen";
 import { mainFn } from "@compas/stdlib";
 import { extendWithDate } from "../gen/date.js";
 import { extendWithSpec } from "../gen/spec.js";

@@ -1,4 +1,4 @@
-import { createBodyParsers, getApp } from "@compas/server";
+import { createBodyParser, getApp } from "@compas/server";
 import {
   fetchCatchErrorAndWrapWithAppError,
   fetchWithBaseUrl,
@@ -54,14 +54,7 @@ export async function serviceAppLoadAndInjectRoutes() {
     import("../spec/controller.js"),
   ]);
 
-  app.use(
-    router(
-      createBodyParsers({
-        jsonLimit: "5mb", // body and params (default: 1mb)
-        formLimit: "5mb", // files (default: 56kb)
-      }),
-    ),
-  );
+  app.use(router(createBodyParser({})));
 }
 
 /**

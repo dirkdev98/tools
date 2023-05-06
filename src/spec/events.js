@@ -1,4 +1,4 @@
-import { Generator } from "@compas/code-gen/experimental";
+import { Generator } from "@compas/code-gen";
 import { AppError, eventStart, eventStop } from "@compas/stdlib";
 
 /**
