@@ -17,5 +17,4 @@ template via [create-compas](https://www.npmjs.com/package/create-compas).
 
 ## Endpoints
 
-- https://ddv.tools/date/:string
-- https://ddv.tools/date/n/:number
+[View the available API's in the Swagger Editor](https://ddv.tools/spec/openapi/editor?url=https://ddv.tools)
