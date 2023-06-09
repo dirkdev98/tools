@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@compas/cli": "0.5.0",
-    "@compas/code-gen": "0.5.0",
-    "@compas/server": "0.5.0",
-    "@compas/stdlib": "0.5.0",
-    "@compas/store": "0.5.0"
+    "@compas/cli": "0.5.2",
+    "@compas/code-gen": "0.5.2",
+    "@compas/server": "0.5.2",
+    "@compas/stdlib": "0.5.2",
+    "@compas/store": "0.5.2"
   },
   "devDependencies": {
-    "@compas/eslint-plugin": "0.5.0"
+    "@compas/eslint-plugin": "0.5.2"
   },
   "prettier": "@compas/eslint-plugin/prettierrc"
 }
