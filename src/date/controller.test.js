@@ -8,6 +8,8 @@ import { testFetchFn } from "../services/app.js";
 mainTestFn(import.meta);
 
 test("date/controller", (t) => {
+  t.jobs = 2;
+
   t.test("convertNumber", (t) => {
     t.test("date.convert.invalid", async (t) => {
       try {
@@ -15,7 +17,7 @@ test("date/controller", (t) => {
           value: -9999999,
         });
       } catch (e) {
-        t.equal(e.key, "date.convert.invalid");
+        t.equal(e.key, t.name);
       }
     });
 
@@ -39,7 +41,7 @@ test("date/controller", (t) => {
           value: "2TE",
         });
       } catch (e) {
-        t.equal(e.key, "validator.error");
+        t.equal(e.key, t.name);
       }
     });
 
